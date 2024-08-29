@@ -52,7 +52,7 @@ mdp = {
 
 ## OUTPUT:
 
-![Screenshot 2023-09-25 225210](https://github.com/Dineshkumar200/mdp-representation/assets/75235789/56d19e40-d594-49f1-abf3-aff62ce1f743)
+<img src='https://github.com/Dineshkumar200/mdp-representation/assets/75235789/56d19e40-d594-49f1-abf3-aff62ce1f743' width=50%>
 
 ## RESULT:
 The result of solving this MDP would be an optimal policy that tells the person which action to take in each state to maximize their productivity while coding.
