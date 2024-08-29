@@ -27,8 +27,7 @@ Right, reward 1
 0-> otherwise
 
 ### Graphical Representation
-
-![WhatsApp Image 2023-09-26 at 14 50 27](https://github.com/Saran408/mdp-representation/assets/75235427/8ae43d8e-1c77-4116-abf9-13c1c0e3a40d)
+<img src='https://github.com/Saran408/mdp-representation/assets/75235427/8ae43d8e-1c77-4116-abf9-13c1c0e3a40d' width=50%>
 
 
 ## PYTHON REPRESENTATION:
