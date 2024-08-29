@@ -1,56 +1,57 @@
 # MDP REPRESENTATION
 
 ## AIM:
-The representation of real world scenario using Markov Decision Process by stating all the states,actions and environment with respective rewards.
+The aim of this MDP is to model the decision-making process of a person while coding, considering two levels of concentration - full concentration and half concentration, and to maximize productivity
 
 ## PROBLEM STATEMENT:
-To develop a game which will promote to other level,when the agent complete its task correctly.
+The person wants to get the gold he has two room left and right, room a and room c.
+
 ### Problem Description
-If the agent unable to complete the given task,then there is no promotion to other level,when it reaches the final level,it will recieve a reward.
+ In this scenario, The person wants to get the gold he has two room left and right, room a and room c. If the man go room a he will get nothing.If the man go to room c he will get gold.
 
 ### State Space
-{L1,L2,L3}--->{0,1,2}
+Room a, Room b, Room c
+
 ### Sample State
-L1--->{0}
+Room C
 
 ### Action Space
-Moving Left(1)
-
-Stay in the same level(0)
+Right (1) and left(0)
 
 ### Sample Action
-Stay in the same level(0)
+Right, reward 1
 
 ### Reward Function
-+1(When it reaches the goal state or final level)
+1-> he will get reward
+</br>
+0-> otherwise
 
 ### Graphical Representation
-![1](https://github.com/Sucharithachowdary/mdp-representation/assets/94166007/a2972744-54fc-49c9-8bc1-05e3faede7f1)
 
+![WhatsApp Image 2023-09-26 at 14 50 27](https://github.com/Saran408/mdp-representation/assets/75235427/8ae43d8e-1c77-4116-abf9-13c1c0e3a40d)
 
 
 ## PYTHON REPRESENTATION:
-~~~
-P = {
-    0:{
-        0: [(0.44,0,0,True),(0.13,1,0,False)],
-        1: [(0.13,1,0,False),(0.44,0,0,True)]
+```python
+mdp = {
+    "Room C": {
+         0 : [(0.7, "Room b", 0, False),(0.3, "room c", 1, True)],
+        1 : [(0.8, "room c", 1, True),(0.2, "Room b", 0, False)]
     },
-    1:{
-        0: [(0.44,1,0,False),(0.13,2,1,True)],
-        1: [(0.13,2,1,True),(0.44,1,0,False)]
+    "Room B": {
+        0 : [(0.8, "rooom a", 0, False),(0.2, "Room b", 0, False)],
+        1 : [(0.9, "room c", 1, True),(0.1, "Room b", 0, False)]
     },
-    2:{
-        0: [(0.44,2,1,True),(0.13,1,1,False)],
-        1: [(0.13,1,1,False),(0.44,2,1,True)]
+    "Room A": {
+         0 : [(0.8, "room a", 0, False),(0.2, "room b", 0, False)],
+        1 : [(0.7, "Room b`", 0, False),(0.3, "room a", 0.0, False)]
     }
 }
-P
-~~~
+
+```
 
 ## OUTPUT:
-![Screenshot (29)](https://github.com/Sucharithachowdary/mdp-representation/assets/94166007/8cfafaa5-b383-4e0c-bab2-f00a71194759)
-
+![image](https://github.com/user-attachments/assets/7f3d5d41-eb97-4dd2-abe1-b8732cd0c1be)
 
 ## RESULT:
-Therefore an MDP representation has been created for a real world scenario with all the states, actions and rewards.
+The result of solving this MDP would be an optimal policy that tells the person which action to take in each state to maximize their productivity while coding.
