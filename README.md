@@ -27,7 +27,7 @@ Right, reward 1
 0-> otherwise
 
 ### Graphical Representation
-<img src='https://github.com/Saran408/mdp-representation/assets/75235427/8ae43d8e-1c77-4116-abf9-13c1c0e3a40d' width=50%>
+<img src='https://github.com/user-attachments/assets/ea9bed1f-270f-4246-b5a5-e3a888c6b902' width=50%>
 
 
 ## PYTHON REPRESENTATION:
